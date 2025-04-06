@@ -1,0 +1,119 @@
+
+<head>
+    <meta charset="UTF-8">
+  
+    <title>My Portfolio | About Me</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/me.png" alt="My Profile Picture">
+                    </div>
+                    <div class="about-text">
+                        <p>Hello! I'm a passionate web developer and designer currently pursuing my Advanced Diploma in iGaming at MCAST. I’m dedicated to crafting intuitive, responsive, and visually engaging web experiences, with a special focus on interactive and dynamic content inspired by the iGaming industry.</p>
+                        <p>With a keen eye for design and a strong technical background, I strive to build websites and applications that not only look good but also provide exceptional user experiences.</p>
+                        
+                        <div class="hidden-content" id="more-about-me">
+                            <p>When I'm not coding, you can find me exploring new technologies, playing basketball, or reading books on design and technology trends. I believe in continuous learning and pushing my boundaries.</p>
+                            <p>I'm particularly interested in front-end development, UI/UX design, and emerging web technologies. I'm always looking for opportunities to collaborate on innovative projects.</p>
+                        </div>
+                        
+                        <button id="more-about-btn" class="btn primary-btn">More About Me</button>
+                        <button id="surprise-btn" class="btn secondary-btn">Surprise Me</button>
+                        <p id="fun-fact" class="fun-fact"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <h3>HTML & CSS</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>jQuery</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Responsive Design</h3>
+                        <div class="skill-level">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <h2>Photo Gallery</h2>
+                <div class="gallery-container">
+                    <a href="images/webSoftwereWork.jpg" class="gallery-item" data-lightbox="my-gallery" data-title="Working on a web project">
+                        <img src="images/webSoftwereWork.jpg" alt="Working on a web softwere project">
+                    </a>
+                    <a href="images/techConference.jpg" class="gallery-item" data-lightbox="my-gallery" data-title="Attending a tech conference">
+                        <img src="images/techConference.jpg" alt="Tech conference in malta">
+                    </a>
+                    <a href="images/workStation.jpg" class="gallery-item" data-lightbox="my-gallery" data-title="My workspace setup">
+                        <img src="images/workStation.jpg" alt="My dream workspace setup">
+                    </a>
+                    <a href="images/teamCodeing.jpg" class="gallery-item" data-lightbox="my-gallery" data-title="Team coding session">
+                        <img src="images/teamCodeing.jpg" alt="Team coding session in the office">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub Profile">GitHub</a>
+                <a href="#" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="#" aria-label="Twitter Profile">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="back-to-top" title="Back to Top">↑</button>
+</body>
+</html>

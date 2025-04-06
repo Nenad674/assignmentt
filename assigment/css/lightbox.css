@@ -1,0 +1,175 @@
+/* Lightbox Styles */
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    z-index: 9998;
+}
+
+#lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#lightbox-container {
+    position: relative;
+}
+
+#lightbox-image {
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+}
+
+#lightbox-caption {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+#lightbox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#lightbox-next,
+#lightbox-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#lightbox-next {
+    right: -40px;
+}
+
+#lightbox-prev {
+    left: -40px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+    /* Navigation Menu - Vertical on Mobile */
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    
+    /* Portfolio Items - 1 per row on Mobile */
+    .project-item {
+        flex-direction: column;
+    }
+    
+    .project-item img {
+        width: 100%;
+    }
+    
+    /* Back to Top Button - Fixed on Mobile */
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    /* Adjust Lightbox for Mobile */
+    #lightbox {
+        width: 90%;
+    }
+    
+    #lightbox-next,
+    #lightbox-prev {
+        font-size: 24px;
+    }
+    
+    #lightbox-next {
+        right: -25px;
+    }
+    
+    #lightbox-prev {
+        left: -25px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .project-item img {
+        width: 50%;
+    }
+    
+    #back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 99;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 901px) {
+    #back-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        display: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+}
